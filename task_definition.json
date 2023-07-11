@@ -1,17 +1,15 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:100493236733:task-definition/FTA_TD:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:100493236733:task-definition/FTA_TD:2",
     "containerDefinitions": [
         {
             "name": "FTA1",
-            "image": "100493236733.dkr.ecr.ap-south-1.amazonaws.com/fta_repo",
+            "image": "100493236733.dkr.ecr.ap-south-1.amazonaws.com/fta_repo:1f2b1f4eefd55a6164391914b2372aef275b0a41",
             "cpu": 0,
             "portMappings": [],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -26,7 +24,7 @@
     "family": "FTA_TD",
     "executionRoleArn": "arn:aws:iam::100493236733:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -69,7 +67,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-07-10T05:06:52.914Z",
+    "registeredAt": "2023-07-11T06:43:33.435Z",
     "registeredBy": "arn:aws:iam::100493236733:root",
     "tags": []
 }
