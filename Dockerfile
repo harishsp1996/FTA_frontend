@@ -11,8 +11,8 @@ RUN npm install --force
 RUN npm install -g @angular/cli
 
 RUN export HOST=0.0.0.0 \
-    && export PORT=443
+    && export PORT=80
 
-EXPOSE 443
+EXPOSE 80
 
 CMD ["ng", "serve", "--host", "0.0.0.0"]
